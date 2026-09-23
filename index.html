@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACF2L - Aéroclub de Frotey Les Lures</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body class="bg-light">
+
+    <div class="bg-dark text-light py-2 text-sm">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <a href="mailto:acf2l@gmail.com" class="text-light text-decoration-none me-3"><i class="fa-solid fa-envelope text-accent"></i> acf2l@gmail.com</a>
+                <a href="tel:+33160566060" class="text-light text-decoration-none"><i class="fa-solid fa-phone text-accent"></i> +33 01 60 56 60 60</a>
+            </div>
+            <div class="d-none d-md-block text-muted small">
+                Affilié FFULM — Agrément n° AS70986858
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <img src="logo acf2l.png" alt="Logo ACF2L" height="55" class="me-3">
+                <div>
+                    <span class="fs-4 fw-bold d-block lh-1 text-primary">ACF2L</span>
+                    <span class="small text-muted fw-bold text-uppercase font-sans" style="font-size: 0.7rem;">Frotey-Les-Lures</span>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-semibold">
+                        <li class="nav-item"><a class="nav-link text-primary" href="#home">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#activites">Nos Activités</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#flotte">Classes d'ULM</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                <a href="#contact" class="btn btn-primary rounded-pill px-4 fw-bold shadow-sm">
+                    <i class="fa-solid fa-paper-plane me-2"></i> Envolez-vous
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="carousel slide carousel-fade position-relative" data-bs-ride="carousel">
+
+        <div class="carousel-inner h-100">
+
+            <div class="carousel-item active h-100">
+                <img src="Slide 1.jpg" class="d-block w-100 h-100 object-fit-cover overlay-img" alt="Ciel nuageux ACF2L">
+            </div>
+
+            <div class="carousel-item h-100">
+                <img src="Slide 2.jpg" class="d-block w-100 h-100 object-fit-cover overlay-img" alt="Autogire bordeaux en vol">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev" style="z-index: 20;">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next" style="z-index: 20;">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Suivant</span>
+        </button>
+
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-start" style="z-index: 10;">
+            <div class="container">
+                <div class="col-lg-8 text-start">
+                    <span class="badge bg-accent text-dark mb-3 px-3 py-2 rounded-pill font-sans"><i class="fa-solid fa-award"></i> Association Loi 1901</span>
+                    <h1 class="display-3 fw-bold text-white mb-4">Prenez de la hauteur avec l'ACF2L</h1>
+                    <p class="lead text-light mb-5 font-sans">Découvrez le plaisir unique de l'aviation légère et de l'ULM au cœur de la Haute-Saône. Formations, baptêmes de l'air et passion aéronautique.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#contact" class="btn btn-accent btn-lg text-dark fw-bold px-4 font-sans"><i class="fa-solid fa-compass"></i> Réservez un Baptême</a>
+                        <a href="#flotte" class="btn btn-primary btn-lg fw-bold px-4 font-sans"><i class="fa-solid fa-plane"></i> Envolez vous</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    <section id="activites" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h6 class="text-primary fw-bold text-uppercase">Engagements & Prestations</h6>
+                <h2 class="display-5 fw-bold mb-3">Nos Activités & Services</h2>
+                <div class="separator bg-accent mx-auto mb-4"></div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm p-4 custom-card">
+                        <div class="icon-box bg-primary text-white rounded mb-3 d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-graduation-cap fs-4"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Formation & Brevets</h4>
+                        <p class="text-muted font-sans mb-4">Apprenez à piloter en toute sécurité avec nos instructeurs certifiés. Formations théoriques et pratiques.</p>
+                        <a href="#contact" class="text-primary fw-bold text-decoration-none mt-auto">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm p-4 custom-card">
+                        <div class="icon-box bg-accent text-dark rounded mb-3 d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-cloud-sun fs-4"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Baptêmes de l'Air</h4>
+                        <p class="text-muted font-sans mb-4">Offrez-vous un vol découverte panoramique pour admirer les paysages magnifiques vus du ciel.</p>
+                        <a href="#contact" class="text-accent fw-bold text-decoration-none mt-auto text-dark">Réserver un vol <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm p-4 custom-card">
+                        <div class="icon-box bg-dark text-white rounded mb-3 d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-wrench fs-4"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Maintenance</h4>
+                        <p class="text-muted font-sans mb-4">Maintenance complète des ULM et montage de tous vos instruments de navigation.</p>
+                        <a href="#contact" class="text-dark fw-bold text-decoration-none mt-auto">Consulter l'atelier <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="flotte" class="py-5 bg-primary text-white">
+        <div class="container py-5">
+
+            <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+                <h6 class="text-accent fw-bold text-uppercase font-sans mb-2">Aviation Légère</h6>
+                <h2 class="display-5 fw-bold mb-3 text-white">Les Catégories d'ULM</h2>
+                <div class="separator bg-accent mx-auto mb-4"></div>
+                <p class="font-sans fs-5 text-light">
+                    La réglementation définit 6 classes distinctes d'Ultra-Légers Motorisés (ULM). Notre association met à votre disposition 3 types d'appareils de pointe.
+                </p>
+            </div>
+
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3 mb-4 text-center font-sans">
+                <div class="col">
+                    <div class="p-3 rounded border border-accent h-100 bg-white bg-opacity-10 transition-all">
+                        <span class="fs-4 text-accent fw-bold d-block">Classe 1</span>
+                        <span class="small fw-bold text-white">Paramoteur</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 rounded border border-accent h-100 bg-white bg-opacity-10 transition-all">
+                        <span class="fs-4 text-accent fw-bold d-block">Classe 2</span>
+                        <span class="small fw-bold text-white">Pendulaire</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 rounded border border-accent h-100 bg-white bg-opacity-10 transition-all">
+                        <span class="fs-4 text-accent fw-bold d-block">Classe 3</span>
+                        <span class="small fw-bold text-white">Multiaxes</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 rounded border border-accent h-100 bg-white bg-opacity-10 transition-all">
+                        <span class="fs-4 text-accent fw-bold d-block">Classe 4</span>
+                        <span class="small fw-bold text-white">Autogire</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 rounded border border-accent h-100 bg-white bg-opacity-10 transition-all">
+                        <span class="fs-4 text-accent fw-bold d-block">Classe 5</span>
+                        <span class="small fw-bold text-white">Aérostat</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 rounded border border-accent h-100 bg-white bg-opacity-10 transition-all">
+                        <span class="fs-4 text-accent fw-bold d-block">Classe 6</span>
+                        <span class="small fw-bold text-white">Hélicoptère</span>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center small font-sans text-white-50 mb-5">Types d'appareils disponibles au club</p>
+
+            <div class="row g-4">
+
+                <div class="col-lg-4">
+                    <div class="card h-100 custom-card border-0 overflow-hidden text-dark">
+                        <div class="position-relative" style="height: 240px;">
+                            <img src="ULM Multiaxes.webp" class="w-100 h-100 object-fit-cover" alt="ULM Multiaxes">
+                            <span class="position-absolute top-0 start-0 m-3 badge bg-primary px-3 py-2 text-uppercase font-sans shadow-sm">Multiaxes</span>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h4 class="fw-bold mb-2 text-primary">ULM Multiaxes</h4>
+                            <p class="card-text text-muted font-sans mb-4">
+                                Appareil fermé ressemblant à un avion classique. Offre un grand confort de vol, idéal pour l'initiation, les voyages et l'apprentissage en toute saison.
+                            </p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top">
+                                <span class="small text-muted font-sans fw-bold">Formation & Baptêmes</span>
+                                <a href="#contact" class="btn btn-primary rounded-pill btn-sm px-4 font-sans fw-bold">Réserver</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card h-100 custom-card border-0 overflow-hidden text-dark">
+                        <div class="position-relative" style="height: 240px;">
+                            <img src="Autogire Ultraléger.jpg" class="w-100 h-100 object-fit-cover" alt="Autogire Ultraléger">
+                            <span class="position-absolute top-0 start-0 m-3 badge bg-accent text-dark px-3 py-2 text-uppercase font-sans shadow-sm">Autogire</span>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h4 class="fw-bold mb-2 text-primary">Autogire Ultraléger</h4>
+                            <p class="card-text text-muted font-sans mb-4">
+                                Équipé d'une voilure tournante libre, l'autogire offre une stabilité exceptionnelle en vol, même par vent modéré, et une visibilité panoramique unique.
+                            </p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top">
+                                <span class="small text-muted font-sans fw-bold">Sensations garanties</span>
+                                <a href="#contact" class="btn btn-primary rounded-pill btn-sm px-4 font-sans fw-bold">Réserver</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card h-100 custom-card border-0 overflow-hidden text-dark">
+                        <div class="position-relative" style="height: 240px;">
+                            <img src="Hélicoptère Ultraléger.jpg" class="w-100 h-100 object-fit-cover" alt="Hélicoptère Ultraléger">
+                            <span class="position-absolute top-0 start-0 m-3 badge bg-dark text-white px-3 py-2 text-uppercase font-sans shadow-sm">Hélicoptère ULM</span>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h4 class="fw-bold mb-2 text-primary">Hélicoptère Ultraléger</h4>
+                            <p class="card-text text-muted font-sans mb-4">
+                                Appareil ultra-maniable permettant le vol stationnaire. Une expérience aéronautique d'une précision et d'une maniabilité fascinantes.
+                            </p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top">
+                                <span class="small text-muted font-sans fw-bold">Vol d'exception</span>
+                                <a href="#contact" class="btn btn-primary rounded-pill btn-sm px-4 font-sans fw-bold">Réserver</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-5 bg-light">
+        <div class="container py-5">
+
+            <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+                <h6 class="text-accent fw-bold text-uppercase font-sans mb-2">Vous avez des questions ?</h6>
+                <h2 class="display-5 fw-bold mb-3 text-primary">Foire Aux Questions</h2>
+                <div class="separator bg-accent mx-auto mb-4"></div>
+                <p class="font-sans fs-5 text-muted">
+                    Retrouvez les réponses aux questions les plus fréquentes concernant nos vols en ULM et l'organisation de nos baptêmes de l'air.
+                </p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion shadow-sm rounded-4 overflow-hidden" id="accordionFAQ">
+
+                        <div class="accordion-item border-0 border-bottom">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button fw-bold text-primary bg-white font-sans fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Qu'est-ce qu'un ULM exactement ?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body font-sans text-muted">
+                                    ULM signifie <strong>Planeur Ultra-Léger Motorisé</strong>. C'est un aéronef très léger, limité à deux places (un pilote et un passager), qui offre une très grande sécurité grâce à sa faible vitesse d'évolution et sa capacité à planer. C'est la machine idéale pour le vol de loisir et la promenade aérienne.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 border-bottom">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed fw-bold text-primary bg-white font-sans fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Faut-il un certificat médical pour un baptême de l'air ?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body font-sans text-muted">
+                                    <strong>Non</strong>, absolument pas ! Aucun certificat médical n'est requis pour effectuer un vol découverte (baptême) en tant que passager. Il vous suffit de venir avec votre enthousiasme. Le certificat médical n'est demandé que si vous souhaitez vous inscrire à l'école de pilotage pour passer votre brevet.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 border-bottom">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed fw-bold text-primary bg-white font-sans fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Comment dois-je m'habiller pour voler ?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body font-sans text-muted">
+                                    Prévoyez une <strong>tenue décontractée et de saison</strong>. Pour un vol en pendulaire ou en autogire (qui sont des appareils ouverts ou semi-ouverts), nous vous conseillons vivement un coupe-vent, des lunettes de soleil et d'éviter les vêtements trop amples. Dans un multiaxes (cabine fermée), vous serez habillé comme dans une voiture.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0 border-bottom">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed fw-bold text-primary bg-white font-sans fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Y a-t-il un âge minimum pour faire un vol ?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body font-sans text-muted">
+                                    Les baptêmes de l'air sont accessibles aux enfants (généralement à partir de 7-8 ans pour des raisons de confort avec le casque radio) avec une <strong>autorisation parentale obligatoire</strong> pour les mineurs. Pour débuter une formation de pilote en école, l'âge minimum requis est de 15 ans.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed fw-bold text-primary bg-white font-sans fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Volez-vous toute l'année ?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body font-sans text-muted">
+                                    <strong>Oui</strong>, le club fonctionne toute l'année ! Les paysages d'hiver sous la neige sont d'ailleurs magnifiques vus du ciel. Cependant, l'aviation légère est très sensible à la météorologie. Tous nos vols sont sujets aux conditions (vent, visibilité, précipitations) et le pilote se réserve toujours le droit de reporter un vol pour garantir votre sécurité.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <h6 class="text-accent fw-bold text-uppercase">Restons en contact</h6>
+                    <h2 class="display-6 fw-bold mb-4">Contactez l'Aéroclub</h2>
+                    <p class="text-light mb-5 font-sans">Pour toute demande de réservation ou d'inscription, notre équipe est à votre écoute.</p>
+                    
+                    <ul class="list-unstyled mb-0 font-sans">
+                        <li class="d-flex mb-4">
+                            <i class="fa-solid fa-location-dot fs-3 text-primary me-3"></i>
+                            <div>
+                                <strong class="d-block">Adresse du siège</strong>
+                                <span class="text-muted">62, Avenue de la République, 70200 Lure</span>
+                            </div>
+                        </li>
+                        <li class="d-flex mb-4">
+                            <i class="fa-solid fa-envelope fs-3 text-primary me-3"></i>
+                            <div>
+                                <strong class="d-block">E-mail</strong>
+                                <span class="text-muted">acf2l@gmail.com</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-7">
+                    <div class="bg-white text-dark p-5 rounded-4 shadow">
+                        <h3 class="fw-bold mb-4">Envoyez-nous un message</h3>
+                        <form>
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label font-sans fw-bold small text-muted text-uppercase">Nom & Prénom</label>
+                                    <input type="text" class="form-control bg-light border-0 py-2">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label font-sans fw-bold small text-muted text-uppercase">E-mail</label>
+                                    <input type="email" class="form-control bg-light border-0 py-2">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label font-sans fw-bold small text-muted text-uppercase">Objet</label>
+                                <select class="form-select bg-light border-0 py-2">
+                                    <option>Réservation Baptême</option>
+                                    <option>Formation</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label font-sans fw-bold small text-muted text-uppercase">Message</label>
+                                <textarea class="form-control bg-light border-0" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 py-3 fw-bold rounded-3">Envoyer le Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-4 border-top border-dark">
+        <div class="container text-center">
+            <p class="mb-0 font-sans text-muted small">&copy; 2026 ACF2L - Aéroclub de Frotey Les Lures. Projet R312.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

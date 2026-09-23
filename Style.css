@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'Boldonse';
+    src: url('../fonts/boldonse.woff2') format('woff2'),
+         url('../fonts/boldonse.woff') format('woff');
+}
+
+:root {
+    --bleu-marine: #29648F;
+    --bleu-clair: #407DAB;
+    --jaune: #FBBF24;
+    --gris-clair: #D9D9D9;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background-color: var(--gris-clair);
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: 'Boldonse', sans-serif !important;
+    color: var(--bleu-marine);
+}
+
+.text-primary { color: var(--bleu-marine) !important; }
+.bg-primary { background-color: var(--bleu-marine) !important; }
+
+.text-accent { color: var(--jaune) !important; }
+.bg-accent { background-color: var(--jaune) !important; }
+
+.btn-primary {
+    background-color: var(--bleu-marine);
+    border-color: var(--bleu-marine);
+    color: white;
+    border-radius: 50px;
+}
+.btn-primary:hover {
+    background-color: var(--bleu-clair);
+    border-color: var(--bleu-clair);
+    color: white;
+}
+
+.btn-accent {
+    background-color: var(--jaune);
+    border-color: var(--jaune);
+    color: #000;
+    border-radius: 50px;
+    font-weight: 600;
+}
+.btn-accent:hover {
+    background-color: #e5a913;
+    border-color: #e5a913;
+    color: #000;
+}
+
+header.carousel {
+    height: 650px;
+}
+.overlay-img {
+    filter: brightness(0.4);
+}
+.custom-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--gris-clair) !important;
+    border-radius: 1rem;
+    background-color: #ffffff;
+}
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(41, 100, 143, 0.15) !important;
+}
