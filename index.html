@@ -397,7 +397,7 @@
 
     <footer class="py-4" style="background-color: #050b14;">
         <div class="container">
-            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-4">
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-4">
 
                 <div class="d-flex align-items-center text-start">
                     <img src="logo acf2l.png" alt="Logo ACF2L" style="width: 42px; height: 42px; object-fit: contain; padding: 2px;">
@@ -411,15 +411,58 @@
                     © 2026 ACF2L - Aéroclub de Frotey Les Lures. Tous droits réservés.
                 </div>
 
-                <div class="d-flex gap-4 font-sans" style="font-size: 0.9rem;">
+                <div class="d-flex flex-wrap justify-content-center gap-3 gap-md-4 font-sans" style="font-size: 0.9rem;">
                     <a href="#home" class="text-secondary text-decoration-none text-opacity-75">Accueil</a>
                     <a href="#activites" class="text-secondary text-decoration-none text-opacity-75">Activités</a>
                     <a href="#contact" class="text-secondary text-decoration-none text-opacity-75">Contact</a>
+                    <a href="#" class="text-secondary text-decoration-none text-opacity-75" data-bs-toggle="modal" data-bs-target="#modalLegales">Mentions légales et Confidentialité</a>
                 </div>
 
             </div>
         </div>
     </footer>
+    <div class="modal fade" id="modalLegales" tabindex="-1" aria-labelledby="modalLegalesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg font-sans">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header bg-primary text-white border-0">
+                    <h5 class="modal-title fw-bold" id="modalLegalesLabel" style="font-family: 'Boldonse', sans-serif;">Mentions Légales & Confidentialité</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body text-dark p-4">
+                    
+                    <h6 class="fw-bold text-primary">1. Éditeur du site</h6>
+                    <p class="small text-muted mb-4">
+                        <strong>L'Aéroclub de Frotey-Les-Lures (ACF2L)</strong><br>
+                        Association loi 1901<br>
+                        Siège social : 62, Avenue de la République, 70200 Lure<br>
+                        Numéro d'agrément : AS70986858<br>
+                        Email : acf2l@gmail.com
+                    </p>
+
+                    <h6 class="fw-bold text-primary">2. Hébergement</h6>
+                    <p class="small text-muted mb-4">
+                        Ce site a été réalisé dans le cadre d'un projet étudiant (TP R312).<br>
+                        Hébergé sur GitHub Pages (ou indiquer l'hébergeur réel de la mise en production).
+                    </p>
+
+                    <h6 class="fw-bold text-primary">3. Propriété intellectuelle</h6>
+                    <p class="small text-muted mb-4">
+                        L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques.
+                    </p>
+
+                    <h6 class="fw-bold text-primary">4. Politique de Confidentialité (RGPD)</h6>
+                    <p class="small text-muted mb-0">
+                        Les informations recueillies via notre formulaire de contact sont enregistrées dans un fichier informatisé par l'ACF2L exclusivement pour traiter vos demandes d'informations ou de réservations. Elles sont conservées pendant une durée maximale de 3 ans.<br><br>
+                        Conformément à la loi "Informatique et Libertés", vous pouvez exercer votre droit d'accès aux données vous concernant et les faire rectifier en contactant notre équipe à l'adresse e-mail mentionnée ci-dessus.
+                    </p>
+
+                </div>
+                <div class="modal-footer bg-light border-0">
+                    <button type="button" class="btn btn-secondary rounded-pill font-sans px-4" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
