@@ -71,3 +71,7 @@ header.carousel {
     transform: translateY(-5px);
     box-shadow: 0 1rem 3rem rgba(41, 100, 143, 0.15) !important;
 }
+footer a.text-secondary:hover {
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
